@@ -12,7 +12,7 @@ Data context: https://www.kaggle.com/competitions/open-problems-single-cell-pert
 
 ## Docker
 
-To use a docker container, use the following commands
+To utilize a Docker container, employ the following commands:
 
 ```
 docker build -t xgb_scp_container . 
@@ -25,7 +25,7 @@ docker run -p 8888:8888 xgb_scp_container
 
 ## Requirements 
 
-If you do not use Docker, you need to have Python 3.9 with the following packages
+If you are not using Docker, ensure you have Python 3.9 installed with the following packages:
 
 ```
 numpy==1.24.3
@@ -39,18 +39,15 @@ scipy==1.11.3
 matplotlib==3.7.3
 seaborn==0.12.2
 ```
-You can use the command `pip install -r requirements.txt` to install the dependencies from the file `requirements.txt` and recreate the environment.
+You can use the command `pip install -r requirements.txt` to install the dependencies listed in the `requirements.txt` file and recreate the environment.
 
 # Using 
 
-The main file with results is `scp-xgboost-in-compressed-space.ipynb`  (copy of the kaggle notebook). 
-To get only prediction using training and test files, run `xgb_script.py`. 
+The main file with results is `scp-xgboost-in-compressed-space.ipynb` (a copy of the Kaggle notebook). To obtain only predictions using training and test files, execute `xgb_script.py`.
 
-To run `.py` or `.ipynb` one must have `id_map.csv` and `de_train.parquet` in the same directory.
+To run a `.py` or `.ipynb` file, ensure that `id_map.csv` and `de_train.parquet` are in the same directory.
 
-
-`python3 xgb_script.py` command gives the following output 
-
+The command `python3 xgb_script.py` produces the following output:
 
 ```
 Files de_train.parquet and id_map.csv are imported successfully.
@@ -61,7 +58,7 @@ CPU Execution time: 288.4 seconds
 The prediction of the model is in submission.csv.
 ```
 
-The output `submission.csv` file contains the model's prediction for `id_map.csv`. 
+The output file, `submission.csv`, contains the model's predictions for `id_map.csv`.
 
 
 
