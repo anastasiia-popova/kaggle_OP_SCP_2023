@@ -6,3 +6,5 @@ scipy==1.11.3
 xgboost==2.0.2
 matplotlib==3.7.3
 seaborn==0.12.2
+fastparquet==2023.10.1
+pyarrow==14.0.1
