@@ -25,8 +25,7 @@ docker run -p 8888:8888 xgb_scp_container
 
 ## Requirements 
 
-
-Python 3.9 with the following packages
+If you do not use Docker, you need to have Python 3.9 with the following packages
 
 ```
 numpy==1.24.3
