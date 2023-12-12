@@ -12,7 +12,12 @@ Data context: https://www.kaggle.com/competitions/open-problems-single-cell-pert
 
 ## Docker
 
-To use a docker container, use the following command:
+To use a docker container, use the following commands
+
+```
+docker build -t xgb_scp_container . 
+```
+and then
 
 ```
 docker run -p 8888:8888 xgb_scp_container
