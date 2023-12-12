@@ -10,6 +10,13 @@ Data context: https://www.kaggle.com/competitions/open-problems-single-cell-pert
 
 # Installation
 
+## Docker
+
+To use a docker container, use the following command:
+
+```
+docker run -p 8888:8888 xgb_scp_container
+```
 
 ## Requirements 
 
@@ -21,6 +28,8 @@ numpy==1.24.3
 pandas==2.0.3
 scikit-learn==1.2.2
 category_encoders==2.6.3
+fastparquet==2023.10.1
+pyarrow==14.0.1
 xgboost==2.0.1
 scipy==1.11.3
 matplotlib==3.7.3
